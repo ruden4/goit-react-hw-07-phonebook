@@ -1,12 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { defaultList } from "./defaultList";
+import { getAllContacts } from "API/APIoperations";
 
 export const contactsSlice = createSlice({
 
     name: 'contacts',
     initialState:{
-        items: defaultList,
-        filter: ""
+        items: [],
+        filter: "",
+        isLoading: false,
+        error: null
     },
 
     reducers: {
@@ -19,6 +21,9 @@ export const contactsSlice = createSlice({
         changeFilter(state, { payload }) {
             state.filter = payload;
         },
+    },
+    extraReducers: {
+
     },
 });
 
