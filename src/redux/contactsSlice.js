@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { getAllContacts } from "API/APIoperations";
 
 export const contactsSlice = createSlice({
 
