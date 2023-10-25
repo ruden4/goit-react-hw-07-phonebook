@@ -8,7 +8,21 @@
     border-radius: 10px;
     padding: 25px 10px;
     background-color: transparent;
+    overflow: auto;
+    max-height: 45vh;
 }
+
+.contactsList::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+    padding: 10px;
+
+}
+.contactsList::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 20px;
+}
+
 .listItem {
 display: flex;
 justify-content: space-between;

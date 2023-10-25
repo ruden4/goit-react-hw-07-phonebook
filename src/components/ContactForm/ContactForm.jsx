@@ -3,8 +3,8 @@ import shortid from 'shortid';
 
 import { useDispatch, useSelector } from 'react-redux';
 import { useState } from 'react';
-import { addContact } from 'redux/contactsSlice';
-import { getContactsList } from 'redux/contactsSlice';
+import { getContactsList } from 'redux/selectors';
+import { addContact } from 'redux/APIoperations';
 
 export function ContactForm() {
     const [name, setName] = useState('');

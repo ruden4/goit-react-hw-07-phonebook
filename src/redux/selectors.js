@@ -1,6 +1,7 @@
-// import { useSelector } from 'react-redux';
-// import { getContactsList } from 'redux/contactsSlice';
-// import { getFilterQuery } from 'redux/contactsSlice';
+export const getFilterQuery = state => state.filter;
 
-// const list = useSelector(getContactsList);
-// const filter = useSelector(getFilterQuery);
+export const getContactsList = state => state.contacts.contacts;
+
+export const getIsLoding = state => state.contacts.isLoading;
+
+export const getError = state => state.contacts.error;
